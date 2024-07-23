@@ -15,8 +15,9 @@
 #include "lwip/apps/sntp.h"
 #include "driver/gpio.h"
 
-const char* ssid = "Boon Labs";
-const char* password = "Swajal@123";
+const char* ssid = "your-SSID"; 
+const char* password = "your-PASSWORD";
+
 Led4digit74HC595 myLedDisplay(26, 5, 35);  // Pins:(SCLK, RCLK, DIO)
 unsigned long previousMillis = 0;
 const long interval = 60000;  // Interval for updating time in milliseconds (1 minute)
